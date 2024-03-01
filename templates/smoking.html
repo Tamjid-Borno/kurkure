@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoking Questions</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smoking Questions</h1>
+        <form action="/process_smoking" method="POST" id="smokingForm">
+            <label>Do you smoke?</label>
+            <select name="smoke" id="smokeSelect">
+                <option value="Yes" selected>Yes</option> <!-- Set selected attribute -->
+                <option value="No">No</option>
+            </select>
+            <div id="chainSmokerQuestions"> <!-- Remove inline style display: none -->
+                <label>Are you a chain smoker?</label>
+                <select name="chain_smoker">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <label>How many cigarettes a day?</label>
+                <input type="number" name="cigarettes_per_day">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('smokeSelect').addEventListener('change', function() {
+            var chainSmokerDiv = document.getElementById('chainSmokerQuestions');
+            if (this.value === 'Yes') {
+                chainSmokerDiv.style.display = 'block';
+            } else {
+                chainSmokerDiv.style.display = 'none';
+            }
+        });
+
+        // Execute the change event listener once when the page loads
+        document.getElementById('smokeSelect').dispatchEvent(new Event('change'));
+    </script>
+</body>
+</html>

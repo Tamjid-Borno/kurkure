@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress and Mental Health Questions</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stress and Mental Health Questions</h1>
+        <form action="/process_stress_and_mental_health" method="POST" id="stressMentalHealthForm">
+            <label>How would you rate your stress level on a scale from 1 to 10?</label>
+            <input type="number" name="stress_level" min="1" max="10" required>
+            <br>
+            <label>Do you practice stress-relief techniques such as meditation or deep breathing?</label>
+            <select name="stress_relief_techniques" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <label>Do you get regular mental health check-ups?</label>
+            <select name="mental_health_checkups" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+

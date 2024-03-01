@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Questions</title>
+</head>
+<body>
+    <h1>Sleeping Questions</h1>
+    <form action="/process_sleeping" method="POST" id="sleepingForm">
+        <label>How many hours do you sleep per night?</label>
+        <input type="number" name="hours_of_sleep" id="hours_of_sleep">
+        <br>
+        <div id="coverSleepsQuestions" style="display: none;">
+            <label>Do you cover up your sleeps at day?</label>
+            <select name="cover_sleeps">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('hours_of_sleep').addEventListener('input', function() {
+            var coverSleepsDiv = document.getElementById('coverSleepsQuestions');
+            if (parseInt(this.value) < 6) {
+                coverSleepsDiv.style.display = 'block';
+            } else {
+                coverSleepsDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

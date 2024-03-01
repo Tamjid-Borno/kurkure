@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Questions</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hydration Questions</h1>
+        <form action="/process_hydration" method="POST" id="hydrationForm">
+            <label>How many glasses of water do you drink per day?</label>
+            <input type="number" name="water_glasses" min="0" required>
+            <br>
+            <label>Do you consume caffeinated beverages regularly?</label>
+            <select name="caffeinated_beverages" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <label>Do you experience symptoms of dehydration (e.g., dry mouth, headache)?</label>
+            <select name="dehydration_symptoms" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

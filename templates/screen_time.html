@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Questions</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/process_screen_time" method="post">
+            <label for="hours_per_day">How many hours per day do you spend in front of screens?</label>
+            <input type="number" id="hours_per_day" name="hours_per_day" required>
+            <br>
+        
+            <label for="digital_detox">Do you practice digital detox or screen-free time regularly?</label>
+            <select id="digital_detox" name="digital_detox" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+        
+            <label for="eye_strain">Do you experience eye strain or headaches due to excessive screen time?</label>
+            <select id="eye_strain" name="eye_strain" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

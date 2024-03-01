@@ -1,0 +1,3 @@
+Health Percentage: 71.24000000000001
+Calculation Details:
+data.txt

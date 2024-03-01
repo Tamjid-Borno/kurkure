@@ -1,0 +1,18 @@
+Do you smoke?: Yes
+Are you a chain smoker?: Yes
+How many cigarettes a day?: 4
+How many hours do you sleep per night?: 2
+Do you cover up your sleeps at day?: No
+Do you exercise once a week?: No
+Do you eat fruits and vegetables daily?: No
+How often do you consume sugary beverages?: Occasionally
+Do you consume processed foods regularly?: No
+Stress level: 7
+Do you practice stress-relief techniques?: Yes
+Do you get regular mental health check-ups?: Yes
+How many glasses of water do you drink per day?: 3
+Do you consume caffeinated beverages regularly?: No
+Do you experience symptoms of dehydration?: Yes
+How many hours per day do you spend in front of screens?: 5
+Do you practice digital detox or screen-free time regularly?: No
+Do you experience eye strain or headaches due to excessive screen time?: No
